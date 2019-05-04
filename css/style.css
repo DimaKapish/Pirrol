@@ -1,11 +1,13 @@
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
 }
 
 @font-face {
   font-family: "Nunnito";
   src: url("../fonts/Nunito/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: 400;
 }
 
 .container {
@@ -19,6 +21,12 @@
 
 .half-part {
   width: 50%;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 50px;
+  }
 }
 
 * {
@@ -35,5 +43,131 @@ body {
 .img-block {
   display: block;
   width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #e9e9e9;
+  position: relative;
+}
+
+.navbar__block {
+  max-height: 110px;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar__block-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar__block-menu-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar__block-menu-wrapper-item {
+  display: block;
+  padding: 0 10px;
+  text-transform: uppercase;
+  color: #191919;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.navbar__block-menu-wrapper-item:hover {
+  color: #10c9c3;
+}
+
+.navbar__block-menu-burger {
+  display: none;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 2px solid #191919;
+}
+
+.navbar__block-menu-burger-link {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__block-menu-burger-link span {
+  position: relative;
+  height: 2px;
+  width: 14px;
+  background-color: #191919;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.navbar__block-menu-burger-link span:before, .navbar__block-menu-burger-link span:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 14px;
+  background-color: #191919;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.navbar__block-menu-burger-link span:before {
+  top: -4px;
+}
+
+.navbar__block-menu-burger-link span:after {
+  top: 4px;
+}
+
+.navbar__block-menu-burger-link-active span:before {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.navbar__block-menu-burger-link-active span:after {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.navbar__block-menu-burger-link-active span {
+  height: 0;
+}
+
+@media (max-width: 800px) {
+  .navbar__block-menu-wrapper {
+    display: none;
+  }
+  .navbar__block-menu-burger {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
