@@ -467,4 +467,66 @@ a {
     min-width: 100%;
   }
 }
+
+.achievments__block-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.achievments__block-wrapper-item {
+  width: 25%;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.achievments__block-wrapper-item-icon {
+  padding-right: 8%;
+}
+
+.achievments__block-wrapper-item-icon i {
+  font-size: 48px;
+}
+
+.achievments__block-wrapper-item-text {
+  padding-top: 3%;
+}
+
+.achievments__block-wrapper-item-text .title {
+  font-size: 18px;
+  letter-spacing: 1.2px;
+}
+
+.achievments__block-wrapper-item-text .descriptions {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+}
+
+@media (max-width: 992px) {
+  .achievments__block-wrapper {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .achievments__block-wrapper-item {
+    width: 50%;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 588px) {
+  .achievments__block-wrapper-item {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
