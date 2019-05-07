@@ -14,4 +14,10 @@ $(document).ready(function () {
         $('.navbar__block-menu-burger-link').removeClass('navbar__block-menu-burger-link-active');
     });
 
+    //Slick
+    $('.comments__block-slider').slick({
+        arrows: false,
+        dots: true
+    });
+
 });

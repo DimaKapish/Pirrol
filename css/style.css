@@ -719,4 +719,50 @@ a {
     width: 100%;
   }
 }
+
+.comments__block-slider {
+  text-align: center;
+}
+
+.comments__block-slider-slide {
+  color: #ffffff;
+}
+
+.comments__block-slider-slide .comment {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 1px;
+}
+
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  padding-top: 50px;
+}
+
+.slick-dots li {
+  list-style-type: none;
+  margin: 0 3px;
+}
+
+.slick-dots li button {
+  padding: 4px;
+  color: transparent;
+  font-size: 0;
+  background-color: #b0e8e6;
+  border-radius: 100%;
+  border: none;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.slick-dots .slick-active button {
+  background-color: #ffffff;
+  padding: 6px;
+}
 /*# sourceMappingURL=style.css.map */
